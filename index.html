@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loader.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./assets/site-logo.png" alt="" />
+        <ul>
+          <li>БАНК</li>
+          <li>БИЗНЕС</li>
+          <li>ИНВЕСТИЦИИ</li>
+          <li>СТРАХОВАНИЕ</li>
+          <li>МОБАЙЛ</li>
+          <li>ПУТЕШЕСТВИЯ</li>
+          <li>РАЗВЛЕЧЕНИЯ</li>
+        </ul>
+        <button>ВОЙТИ</button>
+      </div>
+    </header>
+    <main>
+      <div id="wifi-status" class="wifi__status">
+        <div class="wifi__status-container">
+          <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+              <circle class="back" cx="43" cy="43" r="40"></circle>
+              <circle class="front" cx="43" cy="43" r="40"></circle>
+              <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+              <circle class="back" cx="30" cy="30" r="27"></circle>
+              <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+              <circle class="back" cx="17" cy="17" r="14"></circle>
+              <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+          </div>
+          <p id="wifi-status-text">Check your internet connection!</p>
+        </div>
+      </div>
+      <div class="container">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="container__fields">
+          <div class="container__field">
+            <h3>У меня есть</h3>
+            <ul id="left-menu">
+              <li class="active-nav">RUB</li>
+              <li>USD</li>
+              <li>EUR</li>
+              <li>GBP</li>
+            </ul>
+            <div class="container__field-input">
+              <input id="first-input" placeholder="0" type="text" />
+              <p id="first-input-footer">1 RUB = 0.0135 USD</p>
+            </div>
+          </div>
+          <div class="container__field">
+            <h3>У меня есть</h3>
+            <ul id="right-menu">
+              <li>RUB</li>
+              <li class="active-nav">USD</li>
+              <li>EUR</li>
+              <li>GBP</li>
+            </ul>
+            <div class="container__field-input">
+              <input id="second-input" placeholder="0" type="number" />
+              <p id="second-input-footer">1 RUB = 0.0135 USD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
